@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,17 +13,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EfE-Su-n8i">
-                                <rect key="frame" x="0.0" y="47" width="390" height="763"/>
+                                <rect key="frame" x="0.0" y="47" width="375" height="731"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ad0-bx-X1e">
-                                        <rect key="frame" x="0.0" y="0.0" width="390" height="140"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRI-Ta-EL4">
-                                                <rect key="frame" x="332" y="42" width="28" height="56"/>
+                                                <rect key="frame" x="317" y="42" width="28" height="56"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="50"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -37,19 +37,19 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fzc-CM-89k">
-                                        <rect key="frame" x="0.0" y="140" width="390" height="623"/>
+                                        <rect key="frame" x="0.0" y="140" width="375" height="591"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yDm-ym-OKM">
-                                                <rect key="frame" x="0.0" y="0.0" width="390" height="623"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="591"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wwp-lw-2yq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="390" height="124.66666666666667"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="118.33333333333333"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ar4-01-rlF">
-                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="124.66666666666667"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="118.33333333333333"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2cS-9W-cif">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="118.33333333333333"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="AC">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -60,7 +60,7 @@
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4T-yb-HK6">
-                                                                        <rect key="frame" x="97.666666666666686" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="93.666666666666686" y="0.0" width="94" height="118.33333333333333"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="ˆ">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -71,7 +71,7 @@
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiY-gx-0eh">
-                                                                        <rect key="frame" x="195" y="0.0" width="97.666666666666686" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="187.66666666666666" y="0.0" width="93.666666666666657" height="118.33333333333333"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="%">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -82,7 +82,7 @@
                                                                         </buttonConfiguration>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20q-yl-XoA">
-                                                                        <rect key="frame" x="292.66666666666669" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="281.33333333333331" y="0.0" width="93.666666666666686" height="118.33333333333333"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="/">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -104,13 +104,13 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L1A-Yq-Xfa">
-                                                        <rect key="frame" x="0.0" y="124.66666666666669" width="390" height="124.66666666666669"/>
+                                                        <rect key="frame" x="0.0" y="118.33333333333331" width="375" height="118"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0jm-VT-vxn">
-                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="124.66666666666667"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWq-kO-ncL">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="118"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="7">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -119,9 +119,12 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="pressSeven:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MmI-0e-tO6"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daN-6n-ysz">
-                                                                        <rect key="frame" x="97.666666666666686" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="93.666666666666686" y="0.0" width="94" height="118"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="8">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -130,9 +133,12 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="pressEight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rt0-Ru-mir"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAW-8Z-F86">
-                                                                        <rect key="frame" x="195" y="0.0" width="97.666666666666686" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="187.66666666666666" y="0.0" width="93.666666666666657" height="118"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="9">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -141,9 +147,12 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="pressNine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C03-cZ-auy"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yqU-IX-LKr">
-                                                                        <rect key="frame" x="292.66666666666669" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="281.33333333333331" y="0.0" width="93.666666666666686" height="118"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="x">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -165,13 +174,13 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y7n-5b-JbN">
-                                                        <rect key="frame" x="0.0" y="249.33333333333334" width="390" height="124.33333333333334"/>
+                                                        <rect key="frame" x="0.0" y="236.33333333333334" width="375" height="118.33333333333334"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="dmU-t6-8Ci">
-                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="124.33333333333333"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="118.33333333333333"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ypM-Cs-8kL">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="124.33333333333333"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="118.33333333333333"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="4">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -180,9 +189,12 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="pressFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q9f-7t-CQp"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZX-Ee-UHi">
-                                                                        <rect key="frame" x="97.666666666666686" y="0.0" width="97.333333333333314" height="124.33333333333333"/>
+                                                                        <rect key="frame" x="93.666666666666686" y="0.0" width="94" height="118.33333333333333"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="5">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -191,9 +203,12 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="pressFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7WD-VR-eEj"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Op-J8-aZI">
-                                                                        <rect key="frame" x="195" y="0.0" width="97.666666666666686" height="124.33333333333333"/>
+                                                                        <rect key="frame" x="187.66666666666666" y="0.0" width="93.666666666666657" height="118.33333333333333"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="6">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -202,9 +217,12 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="pressSix:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xu-Mo-klv"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaq-By-I31">
-                                                                        <rect key="frame" x="292.66666666666669" y="0.0" width="97.333333333333314" height="124.33333333333333"/>
+                                                                        <rect key="frame" x="281.33333333333331" y="0.0" width="93.666666666666686" height="118.33333333333333"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="-">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -226,13 +244,13 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkL-HE-U9v">
-                                                        <rect key="frame" x="0.0" y="373.66666666666663" width="390" height="124.66666666666669"/>
+                                                        <rect key="frame" x="0.0" y="354.66666666666663" width="375" height="118"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="4WO-tZ-C8Y">
-                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="124.66666666666667"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="icn-tC-igm">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="118"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="1">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -241,9 +259,12 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="pressOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EKK-5L-YO0"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkw-tY-JGO">
-                                                                        <rect key="frame" x="97.666666666666686" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="93.666666666666686" y="0.0" width="94" height="118"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="2">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -252,9 +273,12 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="pressTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oV4-bF-2Ip"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BvT-9N-EsH">
-                                                                        <rect key="frame" x="195" y="0.0" width="97.666666666666686" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="187.66666666666666" y="0.0" width="93.666666666666657" height="118"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="3">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -263,9 +287,12 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="pressTree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jvv-54-zFX"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyG-2P-8eh">
-                                                                        <rect key="frame" x="292.66666666666669" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="281.33333333333331" y="0.0" width="93.666666666666686" height="118"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="+">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -287,16 +314,16 @@
                                                         </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjj-Rj-spr">
-                                                        <rect key="frame" x="0.0" y="498.33333333333343" width="390" height="124.66666666666669"/>
+                                                        <rect key="frame" x="0.0" y="472.66666666666657" width="375" height="118.33333333333331"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="495-di-sfc">
-                                                                <rect key="frame" x="0.0" y="0.0" width="390" height="124.66666666666667"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="118.33333333333333"/>
                                                                 <subviews>
                                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ev1-x5-MZ8">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="195" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="187.66666666666666" height="118.33333333333333"/>
                                                                         <subviews>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nu-te-lAO">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="97.666666666666671" height="124.66666666666667"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="93.666666666666671" height="118.33333333333333"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="plain" title="0">
                                                                                     <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -305,9 +332,12 @@
                                                                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="pressOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fN8-RZ-PVR"/>
+                                                                                </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awq-jX-xfg">
-                                                                                <rect key="frame" x="97.666666666666686" y="0.0" width="97.333333333333314" height="124.66666666666667"/>
+                                                                                <rect key="frame" x="93.666666666666686" y="0.0" width="94" height="118.33333333333333"/>
                                                                                 <state key="normal" title="Button"/>
                                                                                 <buttonConfiguration key="configuration" style="plain" title=".">
                                                                                     <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -320,7 +350,7 @@
                                                                         </subviews>
                                                                     </stackView>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgl-zQ-25E">
-                                                                        <rect key="frame" x="195" y="0.0" width="195" height="124.66666666666667"/>
+                                                                        <rect key="frame" x="187.66666666666663" y="0.0" width="187.33333333333337" height="118.33333333333333"/>
                                                                         <state key="normal" title="Button"/>
                                                                         <buttonConfiguration key="configuration" style="plain" title="=">
                                                                             <backgroundConfiguration key="background" cornerRadius="0.0">
@@ -373,6 +403,19 @@
                             <constraint firstItem="EfE-Su-n8i" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ysm-BQ-IH8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbVIsor" destination="gRI-Ta-EL4" id="Osr-LK-fuV"/>
+                        <outletCollection property="numbers" destination="6nu-te-lAO" collectionClass="NSMutableArray" id="7cB-Uc-oEA"/>
+                        <outletCollection property="numbers" destination="icn-tC-igm" collectionClass="NSMutableArray" id="1AZ-mf-pLG"/>
+                        <outletCollection property="numbers" destination="dkw-tY-JGO" collectionClass="NSMutableArray" id="tfJ-Dv-d3D"/>
+                        <outletCollection property="numbers" destination="BvT-9N-EsH" collectionClass="NSMutableArray" id="JFn-RT-MC7"/>
+                        <outletCollection property="numbers" destination="ypM-Cs-8kL" collectionClass="NSMutableArray" id="GUq-Dn-dK8"/>
+                        <outletCollection property="numbers" destination="fZX-Ee-UHi" collectionClass="NSMutableArray" id="xuM-JI-3gV"/>
+                        <outletCollection property="numbers" destination="1Op-J8-aZI" collectionClass="NSMutableArray" id="r4e-yL-9is"/>
+                        <outletCollection property="numbers" destination="gWq-kO-ncL" collectionClass="NSMutableArray" id="fhs-QS-rVc"/>
+                        <outletCollection property="numbers" destination="daN-6n-ysz" collectionClass="NSMutableArray" id="orY-2I-u5j"/>
+                        <outletCollection property="numbers" destination="fAW-8Z-F86" collectionClass="NSMutableArray" id="hTl-Kw-Tik"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
