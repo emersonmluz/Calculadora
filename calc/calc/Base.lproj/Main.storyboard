@@ -58,6 +58,9 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="pressAC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SIb-MA-HqS"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4T-yb-HK6">
                                                                         <rect key="frame" x="93.666666666666686" y="0.0" width="94" height="118.33333333333333"/>
@@ -69,6 +72,9 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="50"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="pressPow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="56j-YL-Qpt"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GiY-gx-0eh">
                                                                         <rect key="frame" x="187.66666666666666" y="0.0" width="93.666666666666657" height="118.33333333333333"/>
@@ -80,6 +86,9 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="percentage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kSL-PY-bL5"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20q-yl-XoA">
                                                                         <rect key="frame" x="281.33333333333331" y="0.0" width="93.666666666666686" height="118.33333333333333"/>
@@ -91,6 +100,9 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="divisor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hNi-fe-f3F"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -161,6 +173,9 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="multiplique:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Knu-ng-4E1"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -231,6 +246,9 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="subtrair:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eyr-jc-nGG"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -301,6 +319,9 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="sum:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4hl-Bo-pAm"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -359,6 +380,9 @@
                                                                             <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="30"/>
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
+                                                                        <connections>
+                                                                            <action selector="equal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XUO-xC-f8y"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
