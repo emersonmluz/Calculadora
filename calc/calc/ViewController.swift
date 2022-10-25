@@ -79,7 +79,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func pressPow(_ sender: Any) {
-        print(pow(lbVIsor.text, lbVIsor.text))
+        lbVIsor.text = String(pow(Float(Int(lbVIsor.text ?? "0") ?? 0),
+                                  Float(Int(lbVIsor.text ?? "0") ?? 0)
+                                 ))
     }
     
     
