@@ -22,8 +22,8 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ad0-bx-X1e">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRI-Ta-EL4">
-                                                <rect key="frame" x="317" y="42" width="28" height="56"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="gRI-Ta-EL4">
+                                                <rect key="frame" x="0.0" y="42" width="345" height="56"/>
                                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="50"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -33,6 +33,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="140" id="OBb-nn-hFh"/>
                                             <constraint firstItem="gRI-Ta-EL4" firstAttribute="centerY" secondItem="ad0-bx-X1e" secondAttribute="centerY" id="RJN-ua-O5Q"/>
+                                            <constraint firstItem="gRI-Ta-EL4" firstAttribute="leading" secondItem="ad0-bx-X1e" secondAttribute="leading" id="ggE-pB-dXQ"/>
                                             <constraint firstAttribute="trailing" secondItem="gRI-Ta-EL4" secondAttribute="trailing" constant="30" id="hfS-PR-ur9"/>
                                         </constraints>
                                     </view>
@@ -247,7 +248,7 @@
                                                                             <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         </buttonConfiguration>
                                                                         <connections>
-                                                                            <action selector="subtrair:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eyr-jc-nGG"/>
+                                                                            <action selector="subtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BAl-Vo-DX7"/>
                                                                         </connections>
                                                                     </button>
                                                                 </subviews>
@@ -354,7 +355,7 @@
                                                                                     <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 </buttonConfiguration>
                                                                                 <connections>
-                                                                                    <action selector="pressOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fN8-RZ-PVR"/>
+                                                                                    <action selector="pressZero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZMi-g6-GOv"/>
                                                                                 </connections>
                                                                             </button>
                                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awq-jX-xfg">
@@ -367,6 +368,9 @@
                                                                                     <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="70"/>
                                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 </buttonConfiguration>
+                                                                                <connections>
+                                                                                    <action selector="point:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lLz-6h-3Fz"/>
+                                                                                </connections>
                                                                             </button>
                                                                         </subviews>
                                                                     </stackView>
@@ -428,17 +432,13 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btDivisor" destination="20q-yl-XoA" id="nTF-E8-4lD"/>
+                        <outlet property="btMultiplique" destination="yqU-IX-LKr" id="rsB-KX-YM0"/>
+                        <outlet property="btPercentage" destination="GiY-gx-0eh" id="qzo-zP-ZW3"/>
+                        <outlet property="btPow" destination="s4T-yb-HK6" id="mu8-o9-q6V"/>
+                        <outlet property="btSubtract" destination="vaq-By-I31" id="oxT-Cx-sxE"/>
+                        <outlet property="btSum" destination="LyG-2P-8eh" id="DfG-XR-QHv"/>
                         <outlet property="lbVIsor" destination="gRI-Ta-EL4" id="Osr-LK-fuV"/>
-                        <outletCollection property="numbers" destination="6nu-te-lAO" collectionClass="NSMutableArray" id="7cB-Uc-oEA"/>
-                        <outletCollection property="numbers" destination="icn-tC-igm" collectionClass="NSMutableArray" id="1AZ-mf-pLG"/>
-                        <outletCollection property="numbers" destination="dkw-tY-JGO" collectionClass="NSMutableArray" id="tfJ-Dv-d3D"/>
-                        <outletCollection property="numbers" destination="BvT-9N-EsH" collectionClass="NSMutableArray" id="JFn-RT-MC7"/>
-                        <outletCollection property="numbers" destination="ypM-Cs-8kL" collectionClass="NSMutableArray" id="GUq-Dn-dK8"/>
-                        <outletCollection property="numbers" destination="fZX-Ee-UHi" collectionClass="NSMutableArray" id="xuM-JI-3gV"/>
-                        <outletCollection property="numbers" destination="1Op-J8-aZI" collectionClass="NSMutableArray" id="r4e-yL-9is"/>
-                        <outletCollection property="numbers" destination="gWq-kO-ncL" collectionClass="NSMutableArray" id="fhs-QS-rVc"/>
-                        <outletCollection property="numbers" destination="daN-6n-ysz" collectionClass="NSMutableArray" id="orY-2I-u5j"/>
-                        <outletCollection property="numbers" destination="fAW-8Z-F86" collectionClass="NSMutableArray" id="hTl-Kw-Tik"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

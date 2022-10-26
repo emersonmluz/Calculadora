@@ -9,12 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet var numbers: [UIButton]!
     @IBOutlet weak var lbVIsor: UILabel!
+    @IBOutlet weak var btSubtract: UIButton!
+    @IBOutlet weak var btSum: UIButton!
+    @IBOutlet weak var btMultiplique: UIButton!
+    @IBOutlet weak var btDivisor: UIButton!
+    @IBOutlet weak var btPow: UIButton!
+    @IBOutlet weak var btPercentage: UIButton!
     
     var operador: String = ""
-    var value1: Int = 0
-    var value2: Int = 0
+    var value1: Float = 0
+    var value2: Float = 0
+    var calcValues: Float = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,97 +30,160 @@ class ViewController: UIViewController {
 
     
     @IBAction func pressZero(_ sender: Any) {
-        lbVIsor.text = ("\(String(describing: lbVIsor.text!))" + "0")
+        numbers(number: 0)
     }
     
     
     @IBAction func pressOne(_ sender: Any) {
-        lbVIsor.text = ("\(String(describing: lbVIsor.text!))" + "1")
+        numbers(number: 1)
     }
     
     
     @IBAction func pressTwo(_ sender: Any) {
-        lbVIsor.text = ("\(String(describing: lbVIsor.text!))" + "2")
+        numbers(number: 2)
     }
     
     
     
     @IBAction func pressTree(_ sender: Any) {
-        lbVIsor.text = ("\(String(describing: lbVIsor.text!))" + "3")
+        numbers(number: 3)
     }
     
     
     @IBAction func pressFour(_ sender: Any) {
-        lbVIsor.text = ("\(String(describing: lbVIsor.text!))" + "4")
+        numbers(number: 4)
     }
     
     
     @IBAction func pressFive(_ sender: Any) {
-        lbVIsor.text = ("\(String(describing: lbVIsor.text!))" + "5")
+        numbers(number: 5)
     }
     
     
     @IBAction func pressSix(_ sender: Any) {
-        lbVIsor.text = ("\(String(describing: lbVIsor.text!))" + "6")
+        numbers(number: 6)
     }
     
     
     @IBAction func pressSeven(_ sender: Any) {
-        lbVIsor.text = ("\(String(describing: lbVIsor.text!))" + "7")
+        numbers(number: 7)
     }
     
     
     @IBAction func pressEight(_ sender: Any) {
-        lbVIsor.text = ("\(String(describing: lbVIsor.text!))" + "8")
+        numbers(number: 8)
     }
     
     
     @IBAction func pressNine(_ sender: Any) {
-        lbVIsor.text = ("\(String(describing: lbVIsor.text!))" + "9")
+        numbers(number: 9)
+    }
+    
+    
+    func numbers (number: Int) {
+        if lbVIsor.text == "0" {
+            lbVIsor.text = ""
+        }
+        lbVIsor.text = ("\(String(describing: lbVIsor.text ?? "0"))" + String(number))
     }
     
     
     @IBAction func pressAC(_ sender: Any) {
+        reset()
+        opEnabled()
+    }
+    
+    func reset () {
+        value1 = 0.0
+        value2 = 0.0
         lbVIsor.text = "0"
     }
     
     
+    @IBAction func point(_ sender: Any) {
+        lbVIsor.text = ("\(String(describing: lbVIsor.text ?? "0"))" + ".")
+    }
+    
+    func operandoValue (operador: String) {
+        opDisabled()
+        self.operador = operador
+        value1 = Float(lbVIsor.text ?? "0") ?? 0.0
+        lbVIsor.text = "0"
+    }
+    
     @IBAction func pressPow(_ sender: Any) {
-        lbVIsor.text = String(pow(Float(Int(lbVIsor.text ?? "0") ?? 0),
-                                  Float(Int(lbVIsor.text ?? "0") ?? 0)
-                                 ))
+        operandoValue(operador: "ˆ")
     }
     
     
     @IBAction func divisor(_ sender: Any) {
-        operador = "/"
-        lbVIsor.text = "0"
+        operandoValue(operador: "/")
     }
     
     @IBAction func multiplique(_ sender: Any) {
-        operador = "*"
-        lbVIsor.text = "0"
+        operandoValue(operador: "*")
     }
     
     @IBAction func subtract(_ sender: Any) {
-        operador = "-"
-        lbVIsor.text = "0"
+        operandoValue(operador: "-")
     }
     
     
     @IBAction func sum(_ sender: Any) {
-        operador = "+"
-        lbVIsor.text = "0"
+        operandoValue(operador: "+")
     }
     
     
     @IBAction func percentage(_ sender: Any) {
-        operador = "%"
-        lbVIsor.text = "0"
+        operandoValue(operador: "%")
+    }
+    
+    func opEnabled () {
+        btSum.isEnabled = true
+        btSubtract.isEnabled = true
+        btMultiplique.isEnabled = true
+        btDivisor.isEnabled = true
+        btPow.isEnabled = true
+        btPercentage.isEnabled = true
+    }
+    
+    func opDisabled () {
+        btSum.isEnabled = false
+        btSubtract.isEnabled = false
+        btMultiplique.isEnabled = false
+        btDivisor.isEnabled = false
+        btPow.isEnabled = false
+        btPercentage.isEnabled = false
     }
     
     
     @IBAction func equal(_ sender: Any) {
+        value2 = Float(lbVIsor.text ?? "0") ?? 0.0
+        
+        switch operador {
+            case "+":
+                calcValues = value1 + value2
+            case "-":
+                calcValues = value1 - value2
+            case "*":
+                calcValues = value1 * value2
+            case "/":
+                calcValues = value1 / value2
+            case "ˆ":
+                calcValues = pow(value1, value2)
+            case "%":
+                calcValues = value1 * (value2 / 100)
+        default:
+            lbVIsor.text = "ERROR"
+        }
+        
+        let calculate: Float = calcValues
+        
+        reset()
+        
+        lbVIsor.text = String(calculate)
+        
+        opEnabled()
     }
     
 }
