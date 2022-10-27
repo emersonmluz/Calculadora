@@ -435,6 +435,7 @@
                         <outlet property="btDivisor" destination="20q-yl-XoA" id="nTF-E8-4lD"/>
                         <outlet property="btMultiplique" destination="yqU-IX-LKr" id="rsB-KX-YM0"/>
                         <outlet property="btPercentage" destination="GiY-gx-0eh" id="qzo-zP-ZW3"/>
+                        <outlet property="btPoint" destination="awq-jX-xfg" id="bKH-9i-tid"/>
                         <outlet property="btPow" destination="s4T-yb-HK6" id="mu8-o9-q6V"/>
                         <outlet property="btSubtract" destination="vaq-By-I31" id="oxT-Cx-sxE"/>
                         <outlet property="btSum" destination="LyG-2P-8eh" id="DfG-XR-QHv"/>

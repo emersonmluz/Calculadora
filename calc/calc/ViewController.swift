@@ -16,12 +16,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var btDivisor: UIButton!
     @IBOutlet weak var btPow: UIButton!
     @IBOutlet weak var btPercentage: UIButton!
+    @IBOutlet weak var btPoint: UIButton!
     
     var operador: String = ""
     var value1: Float = 0
     var value2: Float = 0
     var calcValues: Float = 0
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -101,7 +101,18 @@ class ViewController: UIViewController {
     
     
     @IBAction func point(_ sender: Any) {
-        lbVIsor.text = ("\(String(describing: lbVIsor.text ?? "0"))" + ".")
+        var point: Bool = false
+        
+        for letter in lbVIsor.text ?? "" {
+            if letter == "." {
+                point = true
+            }
+        }
+        
+        if point == false {
+            lbVIsor.text = ("\(String(describing: lbVIsor.text ?? "0"))" + ".")
+        }
+        
     }
     
     func operandoValue (operador: String) {
