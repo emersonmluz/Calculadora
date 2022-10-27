@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     var value1: Float = 0
     var value2: Float = 0
     var calcValues: Float = 0
+    var equalsPress: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,9 +82,15 @@ class ViewController: UIViewController {
     
     
     func numbers (number: Int) {
+        if equalsPress == true {
+            lbVIsor.text = "0"
+            equalsPress = false
+        }
+        
         if lbVIsor.text == "0" {
             lbVIsor.text = ""
         }
+        
         lbVIsor.text = ("\(String(describing: lbVIsor.text ?? "0"))" + String(number))
     }
     
@@ -101,6 +108,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func point(_ sender: Any) {
+        if equalsPress == true {
+            lbVIsor.text = "0"
+            equalsPress = false
+        }
+        
         var point: Bool = false
         
         for letter in lbVIsor.text ?? "" {
@@ -169,6 +181,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func equal(_ sender: Any) {
+        
+        equalsPress = true
         value2 = Float(lbVIsor.text ?? "0") ?? 0.0
         
         switch operador {
