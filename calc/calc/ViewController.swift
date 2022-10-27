@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var lbVIsor: UILabel!
+    @IBOutlet weak var display: UILabel!
     @IBOutlet weak var btSubtract: UIButton!
     @IBOutlet weak var btSum: UIButton!
     @IBOutlet weak var btMultiplique: UIButton!
@@ -82,16 +82,25 @@ class ViewController: UIViewController {
     
     
     func numbers (number: Int) {
+        
+        var contLetters: Int = 0
+        
+        for _ in display.text ?? "" {
+            contLetters += 1
+        }
+        
+        guard contLetters <= 30 else {return}
+        
         if equalsPress == true {
-            lbVIsor.text = "0"
+            display.text = "0"
             equalsPress = false
         }
         
-        if lbVIsor.text == "0" {
-            lbVIsor.text = ""
+        if display.text == "0" {
+            display.text = ""
         }
         
-        lbVIsor.text = ("\(String(describing: lbVIsor.text ?? "0"))" + String(number))
+        display.text = ("\(String(describing: display.text ?? "0"))" + String(number))
     }
     
     
@@ -103,26 +112,26 @@ class ViewController: UIViewController {
     func reset () {
         value1 = 0.0
         value2 = 0.0
-        lbVIsor.text = "0"
+        display.text = "0"
     }
     
     
     @IBAction func point(_ sender: Any) {
         if equalsPress == true {
-            lbVIsor.text = "0"
+            display.text = "0"
             equalsPress = false
         }
         
         var point: Bool = false
         
-        for letter in lbVIsor.text ?? "" {
+        for letter in display.text ?? "" {
             if letter == "." {
                 point = true
             }
         }
         
         if point == false {
-            lbVIsor.text = ("\(String(describing: lbVIsor.text ?? "0"))" + ".")
+            display.text = ("\(String(describing: display.text ?? "0"))" + ".")
         }
         
     }
@@ -130,8 +139,8 @@ class ViewController: UIViewController {
     func operandoValue (operador: String) {
         opDisabled()
         self.operador = operador
-        value1 = Float(lbVIsor.text ?? "0") ?? 0.0
-        lbVIsor.text = "0"
+        value1 = Float(display.text ?? "0") ?? 0.0
+        display.text = "0"
     }
     
     @IBAction func pressPow(_ sender: Any) {
@@ -183,7 +192,7 @@ class ViewController: UIViewController {
     @IBAction func equal(_ sender: Any) {
         
         equalsPress = true
-        value2 = Float(lbVIsor.text ?? "0") ?? 0.0
+        value2 = Float(display.text ?? "0") ?? 0.0
         
         switch operador {
             case "+":
@@ -199,14 +208,14 @@ class ViewController: UIViewController {
             case "%":
                 calcValues = value1 * (value2 / 100)
         default:
-            lbVIsor.text = "ERROR"
+            display.text = "ERROR"
         }
         
         let calculate: Float = calcValues
         
         reset()
         
-        lbVIsor.text = String(calculate)
+        display.text = String(calculate)
         
         opEnabled()
     }

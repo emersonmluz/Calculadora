@@ -439,7 +439,7 @@
                         <outlet property="btPow" destination="s4T-yb-HK6" id="mu8-o9-q6V"/>
                         <outlet property="btSubtract" destination="vaq-By-I31" id="oxT-Cx-sxE"/>
                         <outlet property="btSum" destination="LyG-2P-8eh" id="DfG-XR-QHv"/>
-                        <outlet property="lbVIsor" destination="gRI-Ta-EL4" id="Osr-LK-fuV"/>
+                        <outlet property="display" destination="gRI-Ta-EL4" id="Osr-LK-fuV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
