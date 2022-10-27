@@ -113,6 +113,7 @@ class ViewController: UIViewController {
         value1 = 0.0
         value2 = 0.0
         display.text = "0"
+        operador = ""
     }
     
     
@@ -190,6 +191,8 @@ class ViewController: UIViewController {
     
     
     @IBAction func equal(_ sender: Any) {
+        
+        guard operador != "" else {return}
         
         equalsPress = true
         value2 = Float(display.text ?? "0") ?? 0.0
